@@ -1,10 +1,11 @@
 Nama Anggota Kelompok:
 
-Josephine Ceria 		1906398635	
-Rafi Muhammad 			1906398603	
-Machffud Tra Harana Vova 	1906398616	
-James Frederix Rolianto 	1906398553	
-Riris Melissa Winona Togatorop	1906398906
+- Josephine Ceria 				1906398635	
+- Rafi Muhammad 					1906398603	
+- Machffud Tra Harana Vova 		1906398616	
+- James Frederix Rolianto 		1906398553	
+- Riris Melissa Winona Togatorop	1906398906
+
 
 Link Herokuapp:
 donasi-covid19.herokuapp.com
