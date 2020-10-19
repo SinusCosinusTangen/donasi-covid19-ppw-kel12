@@ -20,4 +20,4 @@ Daftar Fitur yang rencananya akan diimplementasikan:
 4. 	Testimoni -> Machffud
 5. 	Info donasi -> Rafi
 
-[![pipeline status](https://gitlab.com/Rafi%20Muhammad/donasi-covid19-ppw-kel12/badges/master/pipeline.svg)](https://gitlab.com/Rafi%20Muhammad/donasi-covid19-ppw-kel12/commits/master)
+[![pipeline status](https://gitlab.com/Rafi%20Muhammad/donasi-covid19-ppw-kel12/badges/master/pipelines.svg)](https://gitlab.com/Rafi%20Muhammad/donasi-covid19-ppw-kel12/commits/master)
