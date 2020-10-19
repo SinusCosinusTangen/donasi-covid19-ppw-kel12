@@ -19,6 +19,5 @@ Daftar Fitur yang rencananya akan diimplementasikan:
 3. 	Cara berdonasi -> Jose
 4. 	Testimoni -> Machffud
 5. 	Info donasi -> Rafi
-Rafi Muhammad / donasi-covid19-ppw-kel12
 
 [![pipeline status](https://gitlab.com/Rafi%20Muhammad/donasi-covid19-ppw-kel12/badges/master/pipeline.svg)](https://gitlab.com/Rafi%20Muhammad/donasi-covid19-ppw-kel12/commits/master)
