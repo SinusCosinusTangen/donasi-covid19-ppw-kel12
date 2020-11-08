@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/badges/master/pipeline.svg)](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/commits/master)
+
 Nama Anggota Kelompok:
 
 - Josephine Ceria 				1906398635	
@@ -19,5 +21,3 @@ Daftar Fitur yang rencananya akan diimplementasikan:
 3. 	Cara berdonasi -> Jose
 4. 	Testimoni -> Machffud
 5. 	Info donasi -> Rafi
-
-
