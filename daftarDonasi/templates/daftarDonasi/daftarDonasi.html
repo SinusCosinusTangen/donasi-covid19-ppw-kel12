@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daftar Donasi</title>
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Donation</th>
+                    <th>Messages</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for donasi in donasi %}
+                <tr>
+                    <td>{{ donasi.name }}</td>
+                    <td>{{ donasi.phone_number }}</td>
+                    <td>{{ donasi.amount }}</td>
+                    <td>{{ donasi.messages }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if donasi.has_other_pages %}
+        <ul class="pagination">
+            {% if donasi.has_previous %}
+                <li><a href="?page={{ donasi.previous_page_number }}">&laquo;</a></li>
+            {% else %}
+                <li class="disabled"><span>&laquo;</span></li>
+            {% endif %}
+            {% for i in donasi.paginator.page_range %}
+            {% if donasi.number == i %}
+                <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+            {% else %}
+                <li><a href="?page={{ i }}">{{ i }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% if donasi.has_next %}
+                <li><a href="?page={{ donasi.next_page_number }}">&raquo;</a></li>
+            {% else %}
+                <li class="disabled"><span>&raquo;</span></li>
+            {% endif %}
+        </ul>
+        {% endif %}
+    </body>
+</html>
