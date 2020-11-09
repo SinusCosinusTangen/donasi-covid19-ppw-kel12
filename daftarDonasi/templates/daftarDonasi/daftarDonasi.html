@@ -5,6 +5,16 @@
     </head>
 
     <body>
+        <div class="row">
+            <div class="col">
+                <div class="card card-body">
+                    <form method="get">
+                        {{ myFilter.form }}
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -16,7 +26,7 @@
             </thead>
 
             <tbody>
-                {% for donasi in donasi %}
+                {% for donasi in donatur %}
                 <tr>
                     <td>{{ donasi.name }}</td>
                     <td>{{ donasi.phone_number }}</td>
@@ -27,22 +37,22 @@
             </tbody>
         </table>
 
-        {% if donasi.has_other_pages %}
+        {% if donatur.has_other_pages %}
         <ul class="pagination">
-            {% if donasi.has_previous %}
-                <li><a href="?page={{ donasi.previous_page_number }}">&laquo;</a></li>
+            {% if donatur.has_previous %}
+                <li><a href="?page={{ donatur.previous_page_number }}">&laquo;</a></li>
             {% else %}
                 <li class="disabled"><span>&laquo;</span></li>
             {% endif %}
-            {% for i in donasi.paginator.page_range %}
-            {% if donasi.number == i %}
+            {% for i in donatur.paginator.page_range %}
+            {% if donatur.number == i %}
                 <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
             {% else %}
                 <li><a href="?page={{ i }}">{{ i }}</a></li>
             {% endif %}
             {% endfor %}
-            {% if donasi.has_next %}
-                <li><a href="?page={{ donasi.next_page_number }}">&raquo;</a></li>
+            {% if donatur.has_next %}
+                <li><a href="?page={{ donatur.next_page_number }}">&raquo;</a></li>
             {% else %}
                 <li class="disabled"><span>&raquo;</span></li>
             {% endif %}
