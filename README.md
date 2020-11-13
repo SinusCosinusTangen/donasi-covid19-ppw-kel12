@@ -1,12 +1,12 @@
 [![pipeline status](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/badges/master/pipeline.svg)](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/commits/master)
-[![coverage status](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/badges/master/coverage.svg)](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/commits/master)
+[![coverage report](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/badges/master/coverage.svg)](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/commits/master)
 
 Nama Anggota Kelompok:
 
-- Josephine Ceria 				1906398635	
+- Josephine Ceria 					1906398635	
 - Rafi Muhammad 					1906398603	
-- Machffud Tra Harana Vova 		1906398616	
-- James Frederix Rolianto 		1906398553	
+- Machffud Tra Harana Vova 			1906398616	
+- James Frederix Rolianto 			1906398553	
 - Riris Melissa Winona Togatorop	1906398906
 
 
