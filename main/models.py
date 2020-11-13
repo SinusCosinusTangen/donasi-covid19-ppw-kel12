@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.enums import Choices
 from django.db.models.fields import CharField
+from django import forms
 
 # Create your models here.
 class Pendonor(models.Model):

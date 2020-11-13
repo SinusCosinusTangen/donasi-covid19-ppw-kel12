@@ -18,6 +18,9 @@
 
 <body>
   <div class="navbar navbar-expand-lg navbar-light nav">
+    <a class="navbar-brand" href="{% url 'main:home'%}">
+      <img src="/static/img/logo.png" width="40" height="40" alt="">
+    </a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navv">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +42,7 @@
           <a href="{% url 'pertanyaan:pertanyaan'%}">Questions</a>
         </li>
         <li>
-          <a href="#">Reports</a>
+          <a href="{% url 'report:report'%}">Reports</a>
         </li>
       </ul>
     </div>
