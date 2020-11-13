@@ -1,4 +1,5 @@
 [![pipeline status](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/badges/master/pipeline.svg)](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/commits/master)
+[![coverage status](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/badges/master/coverage.svg)](https://gitlab.com/rafimuhammad01/donasi-covid19-ppw-kel12/commits/master)
 
 Nama Anggota Kelompok:
 
