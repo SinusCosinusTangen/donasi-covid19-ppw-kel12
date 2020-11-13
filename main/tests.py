@@ -2,6 +2,8 @@ from django.test import LiveServerTestCase, TestCase, tag
 from django.urls import reverse
 from selenium import webdriver
 
+from pertanyaan.models import Question
+
 
 @tag('functional')
 class FunctionalTestCase(LiveServerTestCase):
@@ -31,6 +33,10 @@ class MainTestCase(TestCase):
         # You can also use path names instead of explicit paths.
         response = self.client.get(reverse('main:donate'))
         self.assertEqual(response.status_code, 200)
+
+    def test_bertanya(self) :
+        response = self.client.post('/', data={'name' : 'Rafi', "question" : "test", "ask" : "ask" })
+        self.assertEqual(Question.objects.count(), 1)
 
 
 class MainFunctionalTestCase(FunctionalTestCase):
