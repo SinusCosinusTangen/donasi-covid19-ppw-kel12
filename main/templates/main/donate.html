@@ -6,12 +6,20 @@
 {% endblock meta %}
 
 {% block content %}
-<body>
-  <div class="container mb-5 mt-5">
-    <form method="POST" class = "formulir"> {%csrf_token %}
-        {{form.as_p}}
-        <input type = 'submit' value="SAVE" />
-    </form>
+
+  <div class="row justify-content-between">
+      <div class="col-5 align-self-start" style="margin:3%">
+        <h1 style="color: #4B6574; font-weight: bold; ">Donate Now...</h1>
+        <form method="POST" class = "formulir"> {%csrf_token %}
+          {{form.as_p}}
+          <input type = 'submit' value="SAVE" />
+        </form>
+      </div>
+      <div class="col-5 align-self-start" style="margin-top:15% ; margin-right:2%">
+        <h3 style="color: #4B6574; font-weight: bold; ">How to Donate</h3>
+        <p>Lorem ipsum dolor sit amet, nisl sonet nam an. Cum in appetere intellegam, ne ius liber prompta aliquam. Regione blandit ancillae at pri, per cu libris inimicus. Meis scriptorem consequuntur mea et, in nam veniam repudiare, pri vide sonet referrentur no. Quod nullam numquam pro et. His et facilis intellegat.          </p>
+      </div>
   </div>
-</body>
+  <br>
+</div>
 {% endblock content %}

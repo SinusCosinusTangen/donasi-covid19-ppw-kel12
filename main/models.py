@@ -15,7 +15,7 @@ class Pendonor(models.Model):
     phone_number = models.CharField(max_length = 100, null = True)
     amount = models.CharField(max_length = 100, null = True)
     method = models.CharField(max_length = 100, null = True, choices = METHOD)
-    messages = models.CharField(max_length = 500, null = True)
+    messages = models.CharField(max_length = 300, null = True)
 
     def __str__(self):
         return self.name
