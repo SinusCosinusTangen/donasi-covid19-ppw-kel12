@@ -7,7 +7,9 @@ class Pendonor(models.Model):
     METHOD = (
         ('Transfer Bank', 'Transfer Bank'),
         ('Pepew Pay', 'Pepew Pay'),
-        ('pos', 'pos')
+        ('Go Pew', 'Go Pew'),
+        ('OPEW', 'OPEW'),
+        ('Pew Aja', 'Pew Aja')
     )
     name = models.CharField(max_length = 100, null = True)
     phone_number = models.CharField(max_length = 100, null = True)
