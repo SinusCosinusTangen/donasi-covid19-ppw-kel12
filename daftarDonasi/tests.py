@@ -34,7 +34,7 @@ class MainTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_eksistensi_template(self):
-        response = Client().get('/daftarDonasi/')
+        response = Client().get('/donations/')
         html_response = response.content.decode('utf8')
         self.assertIn("Name", html_response)
         self.assertIn("Phone Number", html_response)
@@ -43,7 +43,7 @@ class MainTestCase(TestCase):
 
     def test_lihat_donatur(self):
         Pendonor.objects.create(name="Udin", phone_number="081212345678", amount="10.000", messages="test")
-        response = Client().get('/daftarDonasi/')
+        response = Client().get('/donations/')
         html_response = response.content.decode('utf8')
         self.assertIn("Udin", html_response)
         self.assertIn("081212345678", html_response)
@@ -53,7 +53,7 @@ class MainTestCase(TestCase):
     def test_tombol_halaman(self):
         for i in range(15):
             Pendonor.objects.create(name="Udin", phone_number="081212345678", amount="10.000", messages="test")
-        response = Client().get('/daftarDonasi/')
+        response = Client().get('/donations/')
         html_response = response.content.decode('utf8')
         self.assertIn("Next", html_response)
         self.assertIn("1", html_response)
@@ -61,13 +61,13 @@ class MainTestCase(TestCase):
         self.assertIn("Previous", html_response)
 
     def test_eksistensi_search_field(self):
-        response = Client().get('/daftarDonasi/')
+        response = Client().get('/donations/')
         html_response = response.content.decode('utf8')
         self.assertIn("Search...", html_response)
         self.assertIn("Search", html_response)
 
     def test_eksistensi_navbar(self):
-        response = Client().get('/daftarDonasi/')
+        response = Client().get('/donations/')
         html_response = response.content.decode('utf8')
         self.assertIn("Home", html_response)
         self.assertIn("Donate", html_response)
