@@ -1,0 +1,33 @@
+h1 {
+    color: #4B6574;
+    text-align: center;
+    font-size: 80px;
+}
+
+input, textarea {
+    text-align: center;
+    border-radius: 80px;
+}
+
+textarea {
+    width: 700px;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+.subbutton {
+    color: black;
+    width: 200px;
+    background-color: #D1F5C5;
+    border-radius: 80px;
+    border: solid;
+    border-width: thin;
+}
+
+.tableform {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
