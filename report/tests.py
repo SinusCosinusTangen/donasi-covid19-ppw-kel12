@@ -34,10 +34,10 @@ class MainTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
 
      def test_eksistensi_template(self):
-         response = Client().get('/reportIssue/')
-         html_response = response.content.decode('utf8')
-         self.assertIn("Report Problems", html_response)
-         self.assertIn("Submit", html_response)
+        response = Client().get('/reportIssue/')
+        html_response = response.content.decode('utf8')
+        self.assertIn("Report Problems", html_response)
+        self.assertIn("Submit", html_response)
 
     def test_eksistensi_navbar(self):
         response = Client().get('/reportIssue/')
