@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    <head>
+        {% block meta %}
+        <title>Report</title>
+        {% endblock meta %}
+    </head>
+
+    <body>
+        {% block content %}
+        <h1 style="color: #4B6574; font-weight: bold; ">Report Problems</h1>
+        <form action="" method="POST">
+            <table class="table">
+                <tbody>
+                    {{ form.as_table }}
+                    <tr>
+                        <th></th>
+                        <td>
+                            {% csrf_token %}
+                            <button class="btn btn-outline-primary" type="submit" name="Simpan">Save</button>
+                            <a class="btn btn-outline-danger" href="{% url 'report:report'%}" name="Batal">Cancel</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        {% endblock %}
+    </body>
+</html>
