@@ -1,9 +1,6 @@
 body {
     background-color: #e4f5e2;
-}
-
-button {
-    margin-left: 20px;
+    padding-bottom: 60px;
 }
 
 .prev {
@@ -52,6 +49,15 @@ button {
     border-width: thin;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #91B14C;
+}
+
+.button {
+    max-height: 38px;
+    max-width: 38px;
+    margin-left: 20px;
+    border: solid;
+    border-radius: 30px;
+    border-width: thin;
 }

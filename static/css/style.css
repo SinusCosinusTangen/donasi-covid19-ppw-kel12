@@ -20,6 +20,6 @@ footer {
 }
 
 .nav {
-  height: 50px;
+  height: fit-content;
   background-color: #91b14c;
 }
