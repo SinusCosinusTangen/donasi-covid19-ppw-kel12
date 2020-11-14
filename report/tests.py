@@ -33,7 +33,7 @@ class MainTestCase(TestCase):
         response = self.client.get(reverse('report:report'))
         self.assertEqual(response.status_code, 200)
 
-     def test_eksistensi_template(self):
+    def test_eksistensi_template(self):
         response = Client().get('/reportIssue/')
         html_response = response.content.decode('utf8')
         self.assertIn("Report Problems", html_response)
