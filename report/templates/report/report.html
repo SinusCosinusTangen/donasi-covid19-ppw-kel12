@@ -11,6 +11,7 @@
 
     <body>
         {% block content %}
+<<<<<<< HEAD
         <div class="report">
             <form action="" method="POST">
                 <table class="tableform">
@@ -40,6 +41,24 @@
                 </table>
             </form>
         </div>
+=======
+        <h1 style="color: #4B6574; font-weight: bold; ">Report Problems</h1>
+        <form action="" method="POST">
+            <table class="table">
+                <tbody>
+                    {{ form.as_table }}
+                    <tr>
+                        <th></th>
+                        <td>
+                            {% csrf_token %}
+                            <button class="btn btn-outline-primary" type="submit" name="Simpan">Simpan</button>
+                            <a class="btn btn-outline-danger" href="{% url 'report:report'%}" name="Cancel">Batal</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+>>>>>>> 664b1fb35c5a16de58d32efcfe42a4dd666d198a
         {% endblock %}
     </body>
 </html>
