@@ -76,6 +76,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# password hashers
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.MD5PasswordHasher',
+]
+
 ROOT_URLCONF = 'ppw_kel_12.urls'
 
 TEMPLATES = [
@@ -163,6 +168,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
     BASE_DIR / 'daftarDonasi/static',
+    BASE_DIR / 'report/static',
 ]
 
 # Make sure the directories exist to prevent errors when doing `collectstatic`.

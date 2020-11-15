@@ -34,7 +34,7 @@
                 {% for donasi in donatur %}
                 <tr>
                     <td>{{ donasi.name }}</td>
-                    <td>{{ donasi.phone_number }}</td>
+                    <td>{{ donasi.phone_number.full_clean }}</td>
                     <td>Rp.{{ donasi.amount }},-</td>
                     <td>{{ donasi.messages }}</td>
                 </tr>
