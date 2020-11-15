@@ -1,0 +1,40 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Isi testi</title>
+</head>
+
+<body style="background-color: #E4F5E2;">
+    <h1 style="margin: 3rem 0; font-family:roboto ;font-size: 80;text-shadow: 1px;color: #4B6574; filter: drop-shadow(0px 40px 35px #000000);padding-left: 10%;">Give Us
+        <span style="color: #8F8F8F;"> Testimonial
+        </span></h1>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="id_nama"></label> {{testi_form.nama}}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="id_institusi"></label> {{testi_form.institusi}}
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="id_testimoni"></label> {{testi_form.testimoni}}
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a href="{% url 'testi:tampilan' %}" class="btn btn-danger">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>

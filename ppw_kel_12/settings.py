@@ -62,7 +62,8 @@ INSTALLED_APPS = [
     'main',
     'daftarDonasi',
     'report',
-    'pertanyaan'
+    'testi',
+    'pertanyaan',
 ]
 
 MIDDLEWARE = [

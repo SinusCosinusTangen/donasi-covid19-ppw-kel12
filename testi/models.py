@@ -8,7 +8,7 @@ class Testi(models.Model):
     testimoni = models.TextField(max_length = 1000)
     tanggal_testi = models.DateField(auto_now=True)
 
-    class Meta:#hapus yaa nanti
+    class Meta:
         indexes = [
             models.Index(fields=['institusi','nama']),
             models.Index(fields=['nama'], name='nama_idx'),
