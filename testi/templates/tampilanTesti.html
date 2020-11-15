@@ -21,6 +21,11 @@
             float: right;
         }
         
+        .Footer {
+            margin-bottom: 10px;
+            background-color: #91b14c;
+        }
+        
         .Content {
             position: relative;
             z-index: 1;
@@ -76,9 +81,6 @@
 
 <body>
     <div class="Container">
-        <div class="Header">
-
-        </div>
         <div class="Content">
             <div class="Wrapper">
                 <div class="LeftContent" style="padding-left: 10%;padding-top: 5%;">
@@ -87,7 +89,7 @@
                     </h1></b>
                     <a style="margin-bottom: 30px;" href="{% url 'testi:testi' %}" class="btn btn-light">Give Us Testimoni</a>
                 </div>
-                <div class="RightContent" style="padding-top: 2.5%;padding-right: 2.5%;">
+                <div class="RightContent" style="padding-top: 2.5%;padding-right: 2.5%; ">
                     {% for itu in semua_testi %}
                     <div class="card" style="width: 100%; margin-bottom: 10px;">
                         <div class="card-header" style="width: 100%;">
@@ -112,6 +114,7 @@
             </div>
         </div>
     </div>
+    <div class="Footer"><br><br></div>
 </body>
 
 </html>
