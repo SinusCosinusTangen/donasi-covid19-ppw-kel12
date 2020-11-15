@@ -1,13 +1,8 @@
+ {% extends 'base.html' %} {% block content%}
 <!DOCTYPE html>
 <html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <style>
         * {
             margin: 0;
@@ -79,8 +74,7 @@
     </style>
 </head>
 
-<body style="background-color: #E4F5E2;">
-
+<body>
     <div class="Container">
         <div class="Header">
 
@@ -88,10 +82,10 @@
         <div class="Content">
             <div class="Wrapper">
                 <div class="LeftContent" style="padding-left: 10%;padding-top: 5%;">
-                    <b><h1 style="margin: 3rem 0; font-family:roboto ;font-size: 80px !important;text-shadow: 1px;color: #4B6574; filter: drop-shadow(0px 40px 35px #000000); ">
-                        What Do<br>People Say<br><span style="color: #8F8F8F;">About Us?</span>
+                    <b><h1 style="color: #4B6574; font-weight: bold; ">
+                        What Do<br>People Say<br>About Us?
                     </h1></b>
-                    <a style="margin-bottom: 30px;" href="{% url 'testi:testi' %}" class="btn btn-success">Give Us Testimoni</a>
+                    <a style="margin-bottom: 30px;" href="{% url 'testi:testi' %}" class="btn btn-light">Give Us Testimoni</a>
                 </div>
                 <div class="RightContent" style="padding-top: 2.5%;padding-right: 2.5%;">
                     {% for itu in semua_testi %}
@@ -121,3 +115,4 @@
 </body>
 
 </html>
+{% endblock %}
