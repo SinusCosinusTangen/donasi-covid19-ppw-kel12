@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block meta %}
-<title>Hello, world!</title>
+<title>Donate</title>
 {% endblock meta %}
 
 {% block content %}
@@ -10,9 +10,42 @@
   <div class="row justify-content-between">
       <div class="col-5 align-self-start" style="margin:3%">
         <h1 style="color: #4B6574; font-weight: bold; ">Donate Now...</h1>
-        <form method="POST" class = "formulir"> {%csrf_token %}
-          {{form.as_p}}
-          <button type="submit" class="btn btn-light" name='ask' value="SAVE">Donate</button>
+        <form action="" method="POST">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            {{ form.name }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form.phone_number }}
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          {{ form.amount }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          {{ form.method }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          {{ form.messages }}
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {% csrf_token %}
+                            <button class="btn btn-light" type="submit" name="Simpan">Submit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
       </div>
       <div class="col-5 align-self-start" style="margin-top:15% ; margin-right:2%">
