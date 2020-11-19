@@ -25,6 +25,7 @@ urlpatterns = [
     path('donations/', include('daftarDonasi.urls')),
     path('reportIssue/', include('report.urls')),
     path('question/', include('pertanyaan.urls')),
+    path('testi/', include('testi.urls')),
     path('institution/', include('donasi.urls')),
 ]
 
