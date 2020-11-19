@@ -56,15 +56,6 @@ class institutionTest(TestCase):
         response = Client().get('/institution/seeInstitution/')
         self.assertTemplateUsed(response, 'donasi/lihat.html')
 
-    def test_simpan_institusi(self):
-        Client().post('/institution', {'lembaga':'Abadi jaya', 'description':'abadi jaya merupakan'})
-        self.assertEquals(Donasi.objects.all().count(), 1)
-
-        response = Client().get('/institution/seeInstitution/')
-        html_response = response.content.decode('utf8')
-        self.assertIn("Abadi jaya", html_response)
-        self.assertIn("abadi jaya merupakan", html_response)
-
 class MainFunctionalTestCase(FunctionalTestCase):
     def test_root_url_exists(self):
         self.selenium.get(f'{self.live_server_url}/')
