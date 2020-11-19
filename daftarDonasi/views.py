@@ -12,7 +12,13 @@ def daftarDonasi(request):
     if search:
         donatur = Pendonor.objects.filter(name__icontains=search)
         paginator = Paginator(donatur, 10)
-
+        try:
+            donatur = paginator.page(page)
+        except PageNotAnInteger:
+            donatur = paginator.page(1)
+        except EmptyPage:
+            donatur = paginator.page(paginator.num_pages)
+    
     try:
         donatur = paginator.page(page)
     except PageNotAnInteger:
