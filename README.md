@@ -22,3 +22,4 @@ Daftar Fitur yang ada pada website ini:
 4. 	Testimoni -> Machffud
 5. 	Info donasi -> Rafi
 6.	Report Problem -> Jose
+7.	Institution -> James
