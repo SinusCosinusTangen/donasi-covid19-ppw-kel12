@@ -46,21 +46,21 @@ class institutionTest(TestCase):
 
     def test_eksistensi_model(self):
         Donasi.objects.create(lembaga="Jaya berkah", description="Jaya berkah merupakan...")
-        self.assertEquals(Info.objects.all().count(), 1)
+        self.assertEquals(Donasi.objects.all().count(), 1)
 
     def test_eksistensi_lihat_institusi(self):
-        response = Client().get('/institution/seeInstitution')
+        response = Client().get('/institution/seeInstitution/')
         self.assertEquals(response.status_code, 200)
         
     def test_eksistensi_template_lihat_institusi(self):
-        response = Client().get('/institution/seeInstitution')
+        response = Client().get('/institution/seeInstitution/')
         self.assertTemplateUsed(response, 'donasi/lihat.html')
 
-    def test_user_save_info(self):
+    def test_simpan_institusi(self):
         Client().post('/institution', {'lembaga':'Abadi jaya', 'description':'abadi jaya merupakan'})
-        self.assertEquals(Info.objects.all().count(), 1)
+        self.assertEquals(Donasi.objects.all().count(), 1)
 
-        response = Client().get('/institution/seeInstitution')
+        response = Client().get('/institution/seeInstitution/')
         html_response = response.content.decode('utf8')
         self.assertIn("Abadi jaya", html_response)
         self.assertIn("abadi jaya merupakan", html_response)
